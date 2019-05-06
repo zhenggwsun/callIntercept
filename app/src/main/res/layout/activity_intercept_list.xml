@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Intercept_list">
+
+    <!--<LinearLayout
+        android:id="@+id/intercept_list_linear_lay_out1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radio_group_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_cell"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:layout_marginRight="40px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="电话"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:background="@drawable/radio_group_selector"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_message"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="短信"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:background="@drawable/radio_group_selector"/>
+        </RadioGroup>
+    </LinearLayout>-->
+   <!-- <LinearLayout
+        android:id="@+id/intercept_list_linear_lay_out2"
+        android:layout_below="@+id/intercept_list_linear_lay_out1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+
+    <LinearLayout
+        android:id="@+id/intercept_list_linear_lay_out2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_view_intercept_list_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="还没有拦截记录..."/>
+        <ListView
+            android:id="@+id/list_view_intercept_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <View
+        android:id="@+id/intercept_list_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:visibility="gone"
+        android:layout_marginBottom="70dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/intercept_list_linear_lay_out3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/button_delete_all_intercept_cell_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textSize="20sp"
+            android:text="清空记录"/>
+    </LinearLayout>
+</RelativeLayout>
